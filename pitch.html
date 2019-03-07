@@ -62,41 +62,29 @@
                                 </div>
                             </div>
                         </div>
-                        <label for="basic-url">
-                            Your vanity URL
-                        </label>
-                        <div class="input-group mb-3">
-                            <div class="input-group-prepend">
-                                <span class="input-group-text" id="basic-addon3">
-                                    https://example.com/users/
-                                </span>
-                            </div>
-                            <input aria-describedby="basic-addon3" class="form-control" id="basic-url" type="text">
-                            </input>
-                        </div>
-                        <div class="input-group mb-3">
-                            <div class="input-group-prepend">
-                                <span class="input-group-text">
-                                    $
-                                </span>
-                            </div>
-                            <input aria-label="Amount (to the nearest dollar)" class="form-control" type="text">
-                                <div class="input-group-append">
-                                    <span class="input-group-text">
-                                        .00
-                                    </span>
+                        
+                        <fieldset>
+                            <h5>Choose a name</h5>
+                            <div class="input-group">
+                                <div class="input-group-prepend">
+                                    <div class="input-group-text">
+                                        <input name="appOrTeamName" type="radio" aria-label="App name" checked>
+                                    </div>
                                 </div>
-                            </input>
-                        </div>
-                        <div class="input-group">
-                            <div class="input-group-prepend">
-                                <span class="input-group-text">
-                                    With textarea
-                                </span>
+                                <input type="text" class="form-control" aria-label="App name" placeholder="App Name">
                             </div>
-                            <textarea aria-label="With textarea" class="form-control">
-                            </textarea>
-                        </div>
+                            <div class="w-100 text-center font-weight-bold">
+                                - or -
+                            </div>
+                            <div class="input-group">
+                                <div class="input-group-prepend">
+                                    <div class="input-group-text">
+                                        <input name="appOrTeamName" type="radio" aria-label="Team name" placeholder="Team name">
+                                    </div>
+                                </div>
+                                <input type="text" class="form-control" aria-label="Team name" placeholder="Team name">
+                            </div>
+                        </fieldset>
                     </form>
                 </div>
             </div>
